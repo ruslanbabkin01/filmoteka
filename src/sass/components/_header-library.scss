@@ -1,0 +1,98 @@
+.header-library {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 92px;
+
+  width: 100vw;
+  z-index: 11;
+
+  background-image: url('/src/images/header/library/lab-mobi.jpg');
+  background-image: url('/src/images/header/library/lab-mobi.webp');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 81px;
+  }
+
+  &.is-fixed {
+    padding-bottom: 0;
+    position: fixed;
+    transform: translateY(-55px);
+    height: 120px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-library {
+    height: 230px;
+    background-image: url('/src/images/header/library/lab-mobi@2x.jpg');
+    background-image: url('/src/images/header/library/lab-mobi@2x.webp');
+  }
+}
+
+@media (min-width: 768px) {
+  .header-library {
+    height: 219px;
+    background-image: url('/src/images/header/library/lab-pl.jpg');
+    background-image: url('/src/images/header/library/lab-pl.webp');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-library {
+      background-image: url('/src/images/header/library/lab-pl@2x.jpg');
+      background-image: url('/src/images/header/library/lab-pl@2x.webp');
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-library {
+    height: 216px;
+    background-image: url('/src/images/header/library/lab-desk.jpg');
+    background-image: url('/src/images/header/library/lab-desk.webp');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-library {
+      background-image: url('/src/images/header/library/lab-desk@2x.jpg');
+      background-image: url('/src/images/header/library/lab-desk@2x.webp');
+    }
+  }
+}
+
+.logo-span {
+  font-size: 30px;
+  line-height: 1.16;
+
+  margin-left: 8px;
+
+  color: $white-text-color;
+
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.list:not(:last-child) {
+  margin-right: 40px;
+}
